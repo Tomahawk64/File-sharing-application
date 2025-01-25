@@ -1,8 +1,6 @@
 # File-sharing-application
 
-markdown
-Copy
-Edit
+
 # Flask API with JWT Authentication and File Upload/Download
 
 This is a Flask-based API for user authentication and file management. The API supports user registration, login with JWT authentication, file uploads, and file downloads. Users can upload files of specific formats (`.pptx`, `.docx`, `.xlsx`) and securely access them with a token.
