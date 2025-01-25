@@ -55,6 +55,7 @@ python app.py
 The API will now be running at http://localhost:5000.
 
 API Endpoints
+
 1. POST /signup
 Description: Create a new user.
 Request Body:
@@ -73,6 +74,7 @@ Edit
   "message": "User created!",
   "url": "encrypted_url_for_your_username"
 }
+
 2. POST /login
 Description: Log in with username and password to get a JWT token.
 Request Body:
@@ -90,6 +92,7 @@ Edit
 {
   "token": "your_jwt_token"
 }
+
 3. POST /upload
 Description: Upload a file (only .pptx, .docx, .xlsx).
 Headers:
@@ -102,6 +105,7 @@ Edit
 {
   "message": "File uploaded successfully!"
 }
+
 4. GET /download-file/{filename}
 Description: Download a file.
 Headers:
@@ -114,6 +118,7 @@ Edit
   "download-link": "/download-file/{filename}",
   "message": "success"
 }
+
 5. GET /list-files
 Description: List all uploaded files.
 Headers:
@@ -125,8 +130,11 @@ Edit
 {
   "files": ["file1.pptx", "file2.docx"]
 }
+
 Security
 The API uses JWT for authentication. Ensure you keep the SECRET_KEY safe in production.
 File uploads are restricted to .pptx, .docx, and .xlsx formats to prevent malicious files from being uploaded.
+
+
 Contribution
 Feel free to fork the repository and make improvements. If you find a bug or have a feature request, please open an issue.
